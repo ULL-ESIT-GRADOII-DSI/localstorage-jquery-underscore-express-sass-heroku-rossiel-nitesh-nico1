@@ -17,3 +17,5 @@ function tabla(){
     var template = fillTable.innerHTML;
     finaltable.innerHTML = _.template(template, {items: r});
 }
+
+//http://www.nodenica.com/training/desplegar-aplicaciones-nodejs-en-heroku
