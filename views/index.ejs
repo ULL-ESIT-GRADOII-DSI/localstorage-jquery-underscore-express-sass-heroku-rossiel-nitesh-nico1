@@ -1,0 +1,11 @@
+    <div>
+      <h1><%- title  %></h1>
+           Introduce una cadena CSV
+           <h2><%- error %></h2>
+        <form action="/csv" method="post">
+           <!--<input type="textarea" name="csv" placeholder="..." autofocus />-->
+           <textarea autofocus cols = "80" rows = "5" name="original" id = "original"></textarea>
+           <br/>
+           <button type="submit">Calcular tabla CSV</button>
+        </form>
+    </div>

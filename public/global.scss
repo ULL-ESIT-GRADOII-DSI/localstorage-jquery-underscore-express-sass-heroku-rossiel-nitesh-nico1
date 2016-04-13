@@ -1,0 +1,43 @@
+$largo: large;
+$xlargo: x-large;
+$ariiial: Arial;
+$arriba: top;
+$derecha: right;
+$medio: center;
+$azul: #FFFFFF;
+$ninguno: none;
+$fuera: outset;
+$dentro: inset;
+$blanco: white;
+$codigo1: #eee;
+$codigo2: #00FF66;
+$auuuto: auto;
+$rojo: red;
+$codigo3: #b0c4de;
+
+html *
+{
+   font-size: $largo;
+   /* The !important ensures that nothing can override what you've set in this style (unless it is also important). */
+   font-family: $ariiial;
+}
+
+h1            { text-align: $medio; font-size: $xlargo; }
+th, td        { vertical-align: $arriba; text-align: $derecha; }   
+/* #finaltable  * { color: white; background-color: black; }   */
+
+/* #finaltable table { border-collapse:collapse; } */
+/* #finaltable table, td { border:1px solid white; } */
+#finaltable:hover td { background-color: $azul; } 
+tr:nth-child(odd)    { background-color: $codigo1; }
+tr:nth-child(even)    { background-color:$codigo2; }
+input        { text-align: $derecha;  border: $ninguno;       }     /* Align input to the right  */
+textarea     { border: $fuera; border-color: $blanco;       }                        
+table        { border: $dentro; border-color: $blanco; }
+table.center { margin-left: $auuuto; margin-right: $auuuto; }
+#result      { border-color: $rojo; }
+tr.error       { background-color: $rojo; }
+body
+{
+ background-color: $codigo3;  /* blue */
+}
