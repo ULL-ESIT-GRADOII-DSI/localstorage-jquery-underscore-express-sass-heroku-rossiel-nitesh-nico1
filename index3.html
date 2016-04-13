@@ -14,6 +14,7 @@
          <% _.each(items, function(name) { %>
            <tr class="<%= name.rowClass %>">
              <% _.each(name.value, function(cell) { %>
+             <%= console.log(cell) %>
                <td><%= cell %></td>
              <% }); %>
            </tr>

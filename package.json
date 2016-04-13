@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "body-parser": "~1.12.2",
+    "express-ejs-layouts": "~2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js",
+    "view": "open http://localhost:8080/"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
